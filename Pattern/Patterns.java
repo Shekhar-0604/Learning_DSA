@@ -7,7 +7,8 @@ public class Patterns {
             //Pattern6(n);
             //Pattern7(n);
             //Pattern8(n);
-            Pattern9(n);
+            //Pattern9(n);
+            Pattern10(n);
             sc.close();
     }
     public static void Pattern6(int n){
@@ -70,6 +71,20 @@ public class Patterns {
         for(int i =n; i>=1 ; i--){
             for(int j = 1 ; j<=i ; j++){
                 System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+    public static void Pattern10(int n){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n-i+1; j++) {
+                System.out.print("");
+            }
+            for(int j = 1 ; j<= 2*i+1 ; j++){
+                System.out.print("*");
+            }
+            for (int j = 1; j <= n-i+1; j++) {
+                System.out.print("");
             }
             System.out.println();
         }
