@@ -89,4 +89,7 @@ public class Patterns {
             System.out.println();
         }
     }
+    public static void Pattern11(int n){
+        
+    }
 }
