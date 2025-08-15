@@ -1,15 +1,16 @@
-class Node {
-    int data;
-    Node next;
+public class SimpleLinkedList {
 
-    Node(int x) {
-        data = x;
-        next = null;
-    }
-}
-
-class LinkedList {
     Node head;
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int x) {
+            data = x;
+            next = null;
+        }
+    }
 
     public void printlist() {
         Node n = head;
@@ -18,12 +19,9 @@ class LinkedList {
             n = n.next;
         }
     }
-}
-
-public class SimpleLinkedList {
 
     public static void main(String[] args) {
-        LinkedList llist = new LinkedList();
+        SimpleLinkedList llist = new SimpleLinkedList();
         llist.head = new Node(5);
         Node head1 = new Node(10);
         Node head2 = new Node(10);
