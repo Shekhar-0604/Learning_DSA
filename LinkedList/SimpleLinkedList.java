@@ -1,5 +1,4 @@
 public class SimpleLinkedList {
-
     Node head;
 
     static class Node {
@@ -18,6 +17,10 @@ public class SimpleLinkedList {
             System.out.println(n.data + " ");
             n = n.next;
         }
+    }
+
+    public void reversePrintlist() {
+
     }
 
     public static void main(String[] args) {
