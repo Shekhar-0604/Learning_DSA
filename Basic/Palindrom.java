@@ -1,8 +1,16 @@
+import java.util.Scanner;
+
 public class Palindrom {
     public static void main(String[] args) {
-        int[] arr = { 111, 222, 333, 444, 555 };
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
         boolean res = isPalinArray(arr);
         System.out.println(res);
+        sc.close();
     }
 
     public static boolean isPalinArray(int[] arr) {
